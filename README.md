@@ -9,9 +9,9 @@ A tiny, universal client for the Poslaju API written in Typescript.
 </p>
 
 <div> 
-<a href="https://www.npmjs.com/package/dev-to-js"><img src="https://img.shields.io/npm/v/dev-to-js" alt="dev-to-js"></a>
-<a href="https://unpkg.com/dev-to-js"><img src="https://img.badgesize.io/https://unpkg.com/dev-to-js@0.1.1/dist/index.js?compression=gzip" alt="gzip size"></a>
-<a href="https://unpkg.com/dev-to-js"><img src="https://img.badgesize.io/https://unpkg.com/dev-to-js@0.1.1/dist/index.js?compression=brotli" alt="brotli size"></a>
+<a href="https://www.npmjs.com/package/poslaju"><img src="https://img.shields.io/npm/v/poslaju" alt="poslaju"></a>
+<a href="https://unpkg.com/poslaju"><img src="https://img.badgesize.io/https://unpkg.com/poslaju@0.3.0/dist/index.js?compression=gzip" alt="gzip size"></a>
+<a href="https://unpkg.com/poslaju"><img src="https://img.badgesize.io/https://unpkg.com/poslaju@0.3.0/dist/index.js?compression=brotli" alt="brotli size"></a>
 </div>
 
 ## ✨ Features:
