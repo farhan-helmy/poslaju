@@ -7,7 +7,7 @@ enum Stage {
 }
 type Config = {
   token: string,
-  stage?: Stage,
+  stage?: string,
 }
 
 export abstract class Base {

@@ -1,13 +1,19 @@
 import { Base } from "../base";
 import { AuthParams } from "./types";
 const encodedParams = new URLSearchParams();
+export const scopes = [
+ 'as01.gen-connote.all',
+ 'as2corporate.v2trackntracewebapijson.all',
+ 'as2corporate.preacceptancessingle.all', 
+ 'as2corporate.postcode-finder.all',
+]
 
 export class Auth extends Base {
   getAuthToken(params: AuthParams) {
     encodedParams.set('client_id', params.client_id);
     encodedParams.set('client_secret', params.client_secret);
     encodedParams.set('grant_type', params.grant_type);
-    params.scope.toString().split(',').forEach((scope) => {
+    scopes.forEach((scope) => {
       encodedParams.append('scope', scope);
     });
     
