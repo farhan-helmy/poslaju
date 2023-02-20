@@ -25,13 +25,19 @@ export abstract class Base {
 
     if (this.stage === Stage.STAGING) {
       url = 'https://gateway-usc.pos.com.my/staging/' + endpoint
-    }else if(this.stage === Stage.PRODUCTION){
+    } else if (this.stage === Stage.PRODUCTION) {
       url = '/production' + endpoint
-    }else if(this.stage === Stage.AUTH){
+    } else if (this.stage === "auth") {
       url = endpoint
       config = {
         ...options,
       }
+      return fetch(url, config).then(r => {
+        if (r.ok) {
+          return r.json()
+        }
+        throw new Error(r.statusText)
+      })
     }
 
     const headers = {
